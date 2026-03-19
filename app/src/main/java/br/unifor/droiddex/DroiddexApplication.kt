@@ -1,4 +1,7 @@
 package br.unifor.droiddex
 
-class DroiddexApplication {
-}
+import android.app.Application
+import dagger.hilt.android.HiltAndroidApp
+
+@HiltAndroidApp
+class DroiddexApplication: Application()

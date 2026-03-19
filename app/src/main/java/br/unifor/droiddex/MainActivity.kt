@@ -22,7 +22,9 @@ import br.unifor.droiddex.ui.features.Home
 import br.unifor.droiddex.ui.features.ScreenA
 import br.unifor.droiddex.ui.features.ScreenB
 import br.unifor.droiddex.ui.theme.DroiddexTheme
+import dagger.hilt.android.AndroidEntryPoint
 
+@AndroidEntryPoint
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
