@@ -10,12 +10,3 @@ data class PokemonDto(
     val sprites: SpritesDto,
     val types: List<TypeSlotDto>
 )
-
-fun PokemonDto.toDomain(): Pokemon{
-    return Pokemon(
-        id = this.id,
-        name = this.name,
-        imageUrl = this.sprites.other.officialArtwork.frontDefault,
-        types = this.types.map { it.type.name }
-    )
-}
