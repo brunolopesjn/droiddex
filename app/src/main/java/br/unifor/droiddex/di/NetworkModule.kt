@@ -1,5 +1,6 @@
 package br.unifor.droiddex.di
 
+import br.unifor.droiddex.data.remote.PokeApi
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn

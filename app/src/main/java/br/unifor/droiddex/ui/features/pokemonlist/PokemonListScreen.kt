@@ -1,5 +1,6 @@
 package br.unifor.droiddex.ui.features.pokemonlist
 
+import android.util.Log
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.padding
@@ -14,7 +15,9 @@ import androidx.compose.runtime.getValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
+import androidx.navigation3.runtime.NavKey
 import br.unifor.droiddex.ui.features.pokemonlist.components.PokemonGrid
+import kotlinx.serialization.Serializable
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
@@ -43,8 +46,12 @@ fun PokemonListScreen(
                         color = MaterialTheme.colorScheme.error,
                         modifier = Modifier.align(Alignment.Center)
                     )
+                    Log.e("DroidDex",state.message)
                 }
             }
         }
     }
 }
+
+@Serializable
+object PokemonListScreen : NavKey
