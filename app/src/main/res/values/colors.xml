@@ -7,4 +7,10 @@
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+
+    <color name="vaporwave_blue">#01CDFE</color>
+    <color name="vaporwave_purple">#B967FF</color>
+    <color name="vaporwave_pink">#FF71CE</color>
+    <color name="vaporwave_green">#05FFA1</color>
+    <color name="vaporwave_yellow">#FFFB96</color>
 </resources>
